@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://app-futurama.emailmeform.com/builder/form_manager/alpha -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+
+        function get_inspectlet_options() {
+            cookie.defaults.domain = 'emailmeform.com';
+            cookie.expiresMultiplier = 1;
+            cookie.defaults.expires = 7200;
+            cookie.defaults.path = "/";
+
+            var userId = (cookie.get('userId') == undefined) ? 0 : cookie.get('userId');
+
+            return {
+                THRESHOLD: 25,
+                SPECIAL_IDS: [277, 462698, 462621],
+                WID: 543030255,
+                USER_ID: userId
+            }
+        }
+    </script>
+
+    <title>Email Me Form™ - HTML Forms, Web Forms, PHP Forms</title>
+    <meta name="description"
+          content="EmailMeForm&#39;s online form builder helps you create beautiful web forms and online surveys. Collect order payments, leads, file uploads, registrations, &amp; applications.">
+    <meta name="keywords"
+          content="online form builder, web form, html form, survey, surveys, application, payment, registration, free, email forms">
+    <link rel="shortcut icon" href="https://assets-futurama.emailmeform.com/favicon.ico?RU1GLTAyLTI4">
+    <script>
+        var base_url = 'https://app-futurama.emailmeform.com/builder/';
+        var site_url = 'https://app-futurama.emailmeform.com/builder';
+        var assets_url = '//assets-futurama.emailmeform.com/';
+        function get_assets_url(uri) {
+            return assets_url + uri;
+        }
+        ;
+        var internal_base_url = 'https://app-futurama.emailmeform.com/builder/';
+        var external_base_url = 'https://futurama.emailmeform.com/builder/';
+        var g_emf_resources = {
+            "js_currency_\u0e3f,Baht,Satang": "\u0e3f,Baht,Satang",
+            "js_currency_CHF,Francs,Rappen": "CHF,Francs,Rappen",
+            "js_currency_$,Dollars,Cents": "$,Dollars,Cents",
+            "js_currency_\u20ac,Euros,Cents": "\u20ac,Euros,Cents",
+            "js_currency_Ft,Forint,Filler": "Ft,Forint,Filler",
+            "js_currency_K\u010d,Koruna,Hal\u00e9\u0159\u016f": "K\u010d,Koruna,Hal\u00e9\u0159\u016f",
+            "js_currency_Kr,Krona,Ore": "Kr,Krona,Ore",
+            "js_currency_$,Pesos,Centavos": "$,Pesos,Centavos",
+            "js_currency_\u20b1,Pesos,Centavos": "\u20b1,Pesos,Centavos",
+            "js_currency_\u00a3,Pounds,Pence": "\u00a3,Pounds,Pence",
+            "js_currency_R,Rand,Cents": "R,Rand,Cents",
+            "js_currency_R$,Reais,Centavos": "R$,Reais,Centavos",
+            "js_currency_RM,Ringgit,Sen": "RM,Ringgit,Sen",
+            "js_currency_Rp,Rupiahs,Sen": "Rp,Rupiahs,Sen",
+            "js_currency_\u20aa,Shekel,Agora": "\u20aa,Shekel,Agora",
+            "js_currency_\u00a5,Yen": "\u00a5,Yen",
+            "js_currency_z\u0142,Z\u0142oty,Grosz": "z\u0142,Z\u0142oty,Grosz",
+            "js_validation_required": "This field is required",
+            "js_validation_required_select_multiple": "Please select an option",
+            "js_validation_required_checkbox": "This checkbox is required",
+            "js_validation_length_unit_character": "characters",
+            "js_validation_length_unit_word": "words",
+            "js_validation_length_range_min_max": "Must be between {min} and {max} {length_unit}, currently: {current}.",
+            "js_validation_length_range_min": "A minimum of {min} {length_unit} is allowed, currently: {current}.",
+            "js_validation_length_range_max": "A maximum of {max} {length_unit} is allowed, currently: {current}.",
+            "js_validation_number_range_min_max": "Must be between {min} and {max}.",
+            "js_validation_number_range_min": "A minimum of {min} is allowed.",
+            "js_validation_number_range_max": "A maximum of {max} is allowed.",
+            "js_validation_max_checkbox": "Please select up to {max} option(s)",
+            "js_validation_min_checkbox": "Please select at least {min} option(s)",
+            "js_validation_confirm": "Your field is not matching",
+            "js_validation_confirm2": "The password entered does not match. Please try again.",
+            "js_validation_confirm3": "The email does not match. Please try again.",
+            "js_validation_telephone": "Invalid phone number",
+            "js_validation_email": "Invalid email address",
+            "js_validation_url": "Invalid website address",
+            "js_validation_general_letter_number": "Only letters, numbers, underscores and dashes allowed",
+            "js_validation_date": "Invalid date, must be in YYYY-MM-DD format",
+            "js_validation_number_only": "Numbers only",
+            "js_validation_ext_number": "Numbers only",
+            "js_validation_number_with_sign": "Numbers and negative\/postive sign only",
+            "js_validation_number_percent_sign": "Numbers and percent sign only",
+            "js_validation_no_special_chars": "No special characters allowed",
+            "js_validation_no_special_chars_ex": "No special characters allowed",
+            "js_validation_letter_only": "Letters only",
+            "js_validation_captcha": "This captcha is wrong",
+            "js_validation_url_ex": "Invalid website address",
+            "js_validation_check_file_error": "File type invalid or file size is too large",
+            "js_validation_check_sum": "The values should add up to {target_sum}, currently: {current_sum}",
+            "js_validation_not_applicable": "N\/A",
+            "js_validation_ext_filename": "Invalid file type, \"{allowed_types}\" allowed.",
+            "js_validation_max_filesize": "File size is too large, maximum {max} allowed.",
+            "js_validation_ext_filename2": "The type of file \"{filename}\" is invalid, \"{allowed_types}\" allowed.",
+            "js_validation_max_filesize2": "The size of file \"{filename}\" is too large, maximum {max} allowed.",
+            "js_file_upload_delete": "Delete",
+            "js_file_upload_cancel": "Cancel",
+            "js_file_upload_close": "Close",
+            "js_score": "Score",
+            "js_calendar_close": "Close",
+            "js_calendar_prev": "Prev",
+            "js_calendar_next": "Next",
+            "js_calendar_current": "Today",
+            "js_calendar_month1": "January",
+            "js_calendar_month2": "February",
+            "js_calendar_month3": "March",
+            "js_calendar_month4": "April",
+            "js_calendar_month5": "May",
+            "js_calendar_month6": "June",
+            "js_calendar_month7": "July",
+            "js_calendar_month8": "August",
+            "js_calendar_month9": "September",
+            "js_calendar_month10": "October",
+            "js_calendar_month11": "November",
+            "js_calendar_month12": "December",
+            "js_calendar_month1_short": "Jan",
+            "js_calendar_month2_short": "Feb",
+            "js_calendar_month3_short": "Mar",
+            "js_calendar_month4_short": "Apr",
+            "js_calendar_month5_short": "May",
+            "js_calendar_month6_short": "Jun",
+            "js_calendar_month7_short": "July",
+            "js_calendar_month8_short": "Aug",
+            "js_calendar_month9_short": "Sep",
+            "js_calendar_month10_short": "Oct",
+            "js_calendar_month11_short": "Nov",
+            "js_calendar_month12_short": "Dec",
+            "js_calendar_weekday1": "Sunday",
+            "js_calendar_weekday2": "Monday",
+            "js_calendar_weekday3": "Tuesday",
+            "js_calendar_weekday4": "Wednesday",
+            "js_calendar_weekday5": "Thursday",
+            "js_calendar_weekday6": "Friday",
+            "js_calendar_weekday7": "Saturday",
+            "js_calendar_weekday1_short": "Sun",
+            "js_calendar_weekday2_short": "Mon",
+            "js_calendar_weekday3_short": "Tue",
+            "js_calendar_weekday4_short": "Wed",
+            "js_calendar_weekday5_short": "Thu",
+            "js_calendar_weekday6_short": "Fri",
+            "js_calendar_weekday7_short": "Sat",
+            "js_calendar_weekday1_min": "Su",
+            "js_calendar_weekday2_min": "Mo",
+            "js_calendar_weekday3_min": "Tu",
+            "js_calendar_weekday4_min": "We",
+            "js_calendar_weekday5_min": "Th",
+            "js_calendar_weekday6_min": "Fr",
+            "js_calendar_weekday7_min": "Sa",
+            "js_calendar_week": "Week",
+            "js_calendar_year": "Year"
+        };</script>
+
+    <script type="text/javascript">
+        var phpsessid = '3q6tjkg8suchjfla52e10k8o45';
+        function cannot_use_ajax_internal() {
+            return $.browser.msie && parseInt($.browser.version, 10) < 10;
+        }
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="formApp">
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-NXRMXB"
+    height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NXRMXB');</script>
+<!-- End Google Tag Manager -->
+
+
+<div id="outer">
+    <div id="header">
+        <div class="wrapper">
+            <a class="icons" href="https://app-futurama.emailmeform.com/builder/manager"></a>
+
+            <div class="header-upgrade"><a class="button orange header-button"
+                                           href="https://app-futurama.emailmeform.com/builder/account/upgrade"><span
+                    id="upgrademain">Upgrade</span></a></div>
+        </div>
+    </div>
+    <div class="line-wrapper">
+        <div class="line1"></div>
+    </div>
+    <div class="app-menus">
+        <div class="line-wrapper">
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+
+        <div class="wrapper">
+            <ul class="hd-menus">
+                <li class="menu_manager"><a class="" href="https://app-futurama.emailmeform.com/builder/manager"><b>My
+                    Forms</b></a></li>
+                <li class="menu_themes"><a class="" href="https://app-futurama.emailmeform.com/builder/themes/edit"><b>Themes</b></a>
+                </li>
+                <li class="menu_report"><a class="" href="https://app-futurama.emailmeform.com/builder/report"><b>Reports</b></a>
+                </li>
+                <li class="menu_templates"><a class="" href="http://app-futurama.emailmeform.com/templates.html"><b>Templates</b></a>
+                </li>
+                <li class="menu_users"><a class=""
+                                          href="https://app-futurama.emailmeform.com/builder/users"><b>Users</b></a>
+                </li>
+                <li class="menu_addons last"><a class="" href="https://app-futurama.emailmeform.com/builder/addons"><b>Add-Ons<sup>NEW</sup></b></a>
+
+                    <div class="sub" style="display: none;"><a class="wrap_kuu"
+                                                               href="https://app-futurama.emailmeform.com/builder/addons/kuu">
+                        <dl class="addons_kuu">
+                            <dt>KeepUsUp</dt>
+                            <dd>24/7 Website Monitoring</dd>
+                        </dl>
+                    </a></div>
+                </li>
+                <li class="last"></li>
+            </ul>
+            <ul class="hd-navs">
+                <li><a href="https://app-futurama.emailmeform.com/builder/account"><b>Account</b></a>|</li>
+
+                <li><a href="https://app-futurama.emailmeform.com/contact-us-internal.html"
+                       target="_blank"><b>support</b></a>|
+                </li>
+
+                <li>
+                    <a href="http://app-futurama.emailmeform.com/builder/authenticator/logout"><b>Logout</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line-wrapper">
+        <div class="line5"></div>
+    </div>
+    <!-- Start of tagline -->
+    <!-- End of tagline -->
+
+    <div id="wrap_for_emf_contanier">
+        <div class="container-fluid">
+
+            <div class="error" style="margin: 10px;width:98%;display:none;">
+            </div>
+            <div class="common_message" style="margin: 10px;width:98%;display:none;">
+            </div>
+
+            <!-- Dashboard -->
+            <div class="dashboard">
+
+                <!-- Sidebar -->
+                <div class="sidebar fheight dark mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar"
+                     style="overflow: visible;">
+                    <div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0">
+                        <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                             style="position:relative; top:0; left:0;" dir="ltr">
+                            <div class="inner">
+                                <ul class="breadcrumbs">
+                                    <li>All Forms</li>
+                                </ul>
+                                <ul class="folders">
+                                    <li>
+                                        <span class="name">Product Surveys</span>
+                                    </li>
+                                    <li>
+                                        <span class="name">Important Forms</span>
+                                    </li>
+                                    <li>
+                                        <span class="name">Orders</span>
+                                    </li>
+                                    <li>
+                                        <span class="name">London Office Surveys</span>
+                                    </li>
+                                    <li>
+                                        <span class="name">New York Office Surveys Long Name</span>
+                                    </li>
+                                    <div class="controls">
+                                        <button type="button" class="btn btn-latent btn-modal toggle-popover"
+                                                data-toggle="modal" data-content="RENAME"
+                                                data-target="#modalFolderRename" role="button" data-original-title=""
+                                                title=""><span class="emfi emf-pencil"></span></button>
+                                        <button type="button" class="btn btn-latent btn-modal toggle-popover"
+                                                data-toggle="modal" data-content="DELETE"
+                                                data-target="#modalFolderDelete" role="button" data-original-title=""
+                                                title=""><span class="emfi emf-remove"></span></button>
+                                    </div>
+                                </ul>
+                                <button type="button" class="btn btn-transparent info ucase btn-md" data-toggle="modal"
+                                        data-target="#modalFolderNew" role="button">Add folder
+                                </button>
+                            </div>
+                            <!-- Pro offer -->
+                            <!-- BETA section class="offer-pro">
+                              <header>
+                                <h3 class="heading">Pro Service</h3>
+                                <small>Starting at $1.99</small>
+                              </header>
+                              <figure>
+                                <img src="http://images.apple.com/euro/imac-with-retina/a/screens/images/overview/family_large.png" class="img-responsive fsize" alt="Pro Service">
+                              </figure>
+                              <footer>
+                                <button type="button" class="btn btn-primary btn-md">Get Help Now!</button>
+                              </footer>
+                            </section -->
+                        </div>
+                    </div>
+                    <div id="mCSB_1_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 50px; height: 0px; top: 0px;"
+                                 oncontextmenu="return false;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.sidebar -->
+
+                <!-- Workspace -->
+                <div class="workspace">
+                    <div ng-view="" class="container-fluid">
+
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- /.workspace -->
+
+            </div>
+            <!-- /.dashboard -->
+
+            <!-- Folder Rename modal -->
+            <div class="modal fade emf-modal" id="modalFolderRename" tabindex="-1" role="dialog"
+                 aria-labelledby="modalFolderRenameLabel">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true" class="emfi emf-modal-close"></span></button>
+                            <h4 id="modalFolderRenameLabel" class="modal-title">Rename Folder</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group c-form">
+                                <label for="inputFolderRename" class="sr-only">Folder Name</label>
+                                <input type="text" class="form-control" id="inputFolderRename"
+                                       placeholder="[Folder Name]">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary ucase btn-md">Rename</button>
+                            <button type="button" class="btn btn-transparent ucase btn-md" data-dismiss="modal">Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Folder Delete modal -->
+            <div class="modal fade emf-modal" id="modalFolderDelete" tabindex="-1" role="dialog"
+                 aria-labelledby="modalFolderDeleteLabel">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true" class="emfi emf-modal-close"></span></button>
+                            <h4 id="modalFolderDeleteLabel" class="modal-title">Delete Folder</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="c-form">
+                                <div class="checkbox lg active">
+                                    <label for="checkboxDeleteAllForms">
+                                        <div id="checkboxDeleteAllForms-styler" class="jq-checkbox cstyle"
+                                             unselectable="on"
+                                             style="-webkit-user-select: none; display: inline-block; position: relative; overflow: hidden;">
+                                            <input id="checkboxDeleteAllForms" type="checkbox" class="cstyle"
+                                                   style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+
+                                            <div class="jq-checkbox__div"></div>
+                                        </div>
+                                        Delete all forms inside this folder
+                                    </label>
+                                </div>
+                                <p style="padding-left: 25px;"><em>This will also delete cloud files associated with the
+                                    forms.<br>This cannot be undone.</em></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary ucase btn-md">Delete</button>
+                            <button type="button" class="btn btn-transparent ucase btn-md" data-dismiss="modal">Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Folder modal -->
+            <div class="modal fade emf-modal" id="modalFolderNew" tabindex="-1" role="dialog"
+                 aria-labelledby="modalFolderNewLabel">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true" class="emfi emf-modal-close"></span></button>
+                            <h4 id="modalFolderNewLabel" class="modal-title">Add New Folder</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group c-form">
+                                <label for="inputFolderNew" class="sr-only">New Folder</label>
+                                <input type="text" class="form-control" id="inputFolderNew"
+                                       placeholder="Untitled Folder">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary ucase btn-md">Create</button>
+                            <button type="button" class="btn btn-transparent ucase btn-md" data-dismiss="modal">Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mailimg"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Start of footer -->
+<div class="footer_wrapper">
+    <div class="line-wrapper">
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-nav">
+            <a target="_blank" href="https://support.emailmeform.com/">Knowledge Base</a>|
+            <a target="_blank" href="https://support.emailmeform.com/forums/22455816-FAQs">FAQ</a>|
+            <a target="_blank" href="https://app-futurama.emailmeform.com/v-terms.html">Terms</a>|
+            <a target="_blank" href="https://app-futurama.emailmeform.com/v-privacy.html">Privacy</a>|
+            <a target="_blank" href="https://app-futurama.emailmeform.com/contact-us-internal.html">Contact</a>
+        </div>
+        <div class="line"></div>
+        <div class="copyright">
+            <p>Copyright © 2006-2015 <a href="https://app-futurama.emailmeform.com/"><span
+                    class="icons logo-icon"></span><span>EmailMeForm<em>™</em></span></a> LLC. All rights reserved.
+                EMF-02-28 bender CDN </p>
+        </div>
+    </div>
+</div>
+<!-- End of footer -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu_addons').hover(function () {
+            $('.menu_addons .sub').show();
+            $(this).addClass('active');
+        }, function () {
+            $('.menu_addons .sub').hide();
+            $(this).removeClass('active');
+        })
+    });
+</script>
+
+</body>
+</html>

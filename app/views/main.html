@@ -1,0 +1,92 @@
+<div ng-controller='MainCtrl'>
+    <!-- Meta -->
+    <div class="meta row">
+        <strong>7,754</strong> Submissions and <strong>2.4GB</strong> Storage left &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-transparent info btn-sm ucase">more &nbsp;<span
+                class="emfi emf-menu-arrow-down"></span></button>
+    </div>
+    <!-- /.meta -->
+
+    <!-- Top bar -->
+    <div class="row bar-top">
+        <div class="col-xs-6">
+            <div class="folder-title"><i class="emfi emf-folder-open"></i> <span class="bright">Important Forms</span>
+            </div>
+        </div>
+        <!-- /.c-form -->
+        <div class="col-xs-6 text-right form-inline c-form">
+            <div class="form-group input-group has-feedback">
+                <input type="text" ng-model="search" class="form-control" id="inputSearchForm" placeholder="Search Form" size="25">
+                <span class="emfi emf-search form-control-feedback likebtn"></span>
+            </div>
+            <div class="form-group">
+                <button id="btnChangeView" type="button" class="btn btn-transparent btn-tool info btn-md toggle-popover"
+                        role="button" data-content="LIST VIEW" data-original-title="" title="">
+                    <i class="emfi emf-list2"></i>
+                </button>
+                <div class="dropdown c-dropdown">
+                    <button type="button" class="btn btn-transparent btn-tool info btn-md toggle-popover" role="button"
+                            id="dropdownSortForms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            data-content="SORT FORMS" data-original-title="" title="">
+                        <i class="emfi emf-sort"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSortForms">
+                        <li class="ucase h-list">Sort by</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#">Date Created</a>
+                        </li>
+                        <li><a href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#">Date Edited</a>
+                        </li>
+                        <li><a href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#">Last Entry</a>
+                        </li>
+                        <li><a href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#">Form Title</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-warning btn-md ucase">Add Form</button>
+            </div>
+        </div>
+        <!-- /.buttons -->
+    </div>
+    <!-- /.bar-top -->
+
+    <div class="scroll-container"><br>
+
+                    <div infinite-scroll="loadForms()"
+                         infinite-scroll-distance='1'  style="position: relative; overflow: visible; height: 477px;" class="redrow s15 data-container">
+                        <div ng-repeat="form in forms | filter: search" class="col-lg-3 col-xs-4 thumbform">
+                            <div class="thumbnail c-form">
+                                <img src="{{form.image}}" alt="..." class="img-preview mCS_img_loaded">
+
+                                <div class="caption row">
+                                    <div class="col-xs-7 heading">
+                                        <a href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#"
+                                           class="title"
+                                           title="Contact Form">{{form.name}}</a>
+                                    </div>
+                                    <div class="col-xs-5 status">
+                                        <span class="emfi emf-ssl-enabled"></span>
+                                    </div>
+                                </div>
+                                <div class="meta">
+                                    <span class="emfi emf-tags"></span> Tags: <a ng-repeat="tag in form.tags"
+                                                                                 href="https://app-futurama.emailmeform.com/builder/form_manager/alpha#">{{tag}} </a>
+                                </div>
+                                <div class="inverted checkbox lg">
+                                    <label for="checkForm-1">
+                                        <div id="checkForm-1-styler" class="jq-checkbox cstyle" unselectable="on"
+                                             style="-webkit-user-select: none; display: inline-block; position: relative; overflow: hidden;">
+                                            <input id="checkForm-1" type="checkbox" class="cstyle"
+                                                   style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+
+                                            <div class="jq-checkbox__div"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.data-container -->
+                </div>
+            </div>
