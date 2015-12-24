@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'infinite-scroll'
+    'infinite-scroll',
+    'angucomplete-alt'
   ])
   .config(function ($routeProvider) {
     $routeProvider
