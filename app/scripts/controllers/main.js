@@ -34,12 +34,7 @@ angular.module('formApp')
         };
 
         $scope.getFormData(0);
-
-        $scope.formIndex = [
-            "Contact Form",
-            "Contact Form",
-            "Contact Form"
-        ];
+        $scope.getFormData(0);
 
         $scope.doSearch = function(keyword){
 
